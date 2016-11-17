@@ -74,6 +74,16 @@ struct Taco {
             self._proteinID = TacoProtein.Fish
         default:
             self._proteinID = TacoProtein.Beef
+            
+            
+        }
+        
+        //Taco Condement
+        switch condimentId {
+        case 2:
+            self._condimentID = TacoCondiment.Plain
+        default:
+            self._condimentID = TacoCondiment.Loaded
         }
     }
 }
