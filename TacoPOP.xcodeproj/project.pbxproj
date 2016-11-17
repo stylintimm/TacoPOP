@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		F712007B1DDE2FC800923CB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F712007A1DDE2FC800923CB1 /* AppDelegate.swift */; };
-		F712007D1DDE2FC800923CB1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F712007C1DDE2FC800923CB1 /* ViewController.swift */; };
 		F71200801DDE2FC800923CB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F712007E1DDE2FC800923CB1 /* Main.storyboard */; };
 		F71200821DDE2FC800923CB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F71200811DDE2FC800923CB1 /* Assets.xcassets */; };
 		F71200851DDE2FC800923CB1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F71200831DDE2FC800923CB1 /* LaunchScreen.storyboard */; };
 		F71200901DDE2FC800923CB1 /* TacoPOPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F712008F1DDE2FC800923CB1 /* TacoPOPTests.swift */; };
+		F71200A11DDE31A400923CB1 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71200A01DDE31A400923CB1 /* MainVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +28,6 @@
 /* Begin PBXFileReference section */
 		F71200771DDE2FC800923CB1 /* TacoPOP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TacoPOP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F712007A1DDE2FC800923CB1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F712007C1DDE2FC800923CB1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F712007F1DDE2FC800923CB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F71200811DDE2FC800923CB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F71200841DDE2FC800923CB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +35,7 @@
 		F712008B1DDE2FC800923CB1 /* TacoPOPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TacoPOPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F712008F1DDE2FC800923CB1 /* TacoPOPTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TacoPOPTests.swift; sourceTree = "<group>"; };
 		F71200911DDE2FC800923CB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F71200A01DDE31A400923CB1 /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +77,12 @@
 		F71200791DDE2FC800923CB1 /* TacoPOP */ = {
 			isa = PBXGroup;
 			children = (
-				F712007A1DDE2FC800923CB1 /* AppDelegate.swift */,
-				F712007C1DDE2FC800923CB1 /* ViewController.swift */,
+				F712009F1DDE315D00923CB1 /* Extenstions */,
+				F712009E1DDE315100923CB1 /* Protocols */,
+				F712009D1DDE314600923CB1 /* Resources */,
+				F712009C1DDE313E00923CB1 /* Model */,
+				F712009B1DDE313800923CB1 /* View */,
+				F712009A1DDE313000923CB1 /* Controller */,
 				F712007E1DDE2FC800923CB1 /* Main.storyboard */,
 				F71200811DDE2FC800923CB1 /* Assets.xcassets */,
 				F71200831DDE2FC800923CB1 /* LaunchScreen.storyboard */,
@@ -94,6 +98,50 @@
 				F71200911DDE2FC800923CB1 /* Info.plist */,
 			);
 			path = TacoPOPTests;
+			sourceTree = "<group>";
+		};
+		F712009A1DDE313000923CB1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F712007A1DDE2FC800923CB1 /* AppDelegate.swift */,
+				F71200A01DDE31A400923CB1 /* MainVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		F712009B1DDE313800923CB1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		F712009C1DDE313E00923CB1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		F712009D1DDE314600923CB1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		F712009E1DDE315100923CB1 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		F712009F1DDE315D00923CB1 /* Extenstions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Extenstions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,8 +249,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F712007D1DDE2FC800923CB1 /* ViewController.swift in Sources */,
 				F712007B1DDE2FC800923CB1 /* AppDelegate.swift in Sources */,
+				F71200A11DDE31A400923CB1 /* MainVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
