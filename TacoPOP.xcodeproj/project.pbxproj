@@ -17,6 +17,11 @@
 		F71200A51DDE340200923CB1 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71200A41DDE340200923CB1 /* HeaderView.swift */; };
 		F71200A71DDE36F700923CB1 /* Taco.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71200A61DDE36F700923CB1 /* Taco.swift */; };
 		F71200A91DDE5FD100923CB1 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71200A81DDE5FD100923CB1 /* DataService.swift */; };
+		F71200AC1DDE63AA00923CB1 /* TacoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71200AA1DDE63AA00923CB1 /* TacoCell.swift */; };
+		F71200AD1DDE63AA00923CB1 /* TacoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F71200AB1DDE63AA00923CB1 /* TacoCell.xib */; };
+		F71200AF1DDE690800923CB1 /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71200AE1DDE690800923CB1 /* ReusableView.swift */; };
+		F71200B11DDE699000923CB1 /* NibLoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71200B01DDE699000923CB1 /* NibLoadableView.swift */; };
+		F71200B31DDE6A0A00923CB1 /* UICollectionView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71200B21DDE6A0A00923CB1 /* UICollectionView+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +49,11 @@
 		F71200A41DDE340200923CB1 /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		F71200A61DDE36F700923CB1 /* Taco.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Taco.swift; sourceTree = "<group>"; };
 		F71200A81DDE5FD100923CB1 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		F71200AA1DDE63AA00923CB1 /* TacoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TacoCell.swift; sourceTree = "<group>"; };
+		F71200AB1DDE63AA00923CB1 /* TacoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TacoCell.xib; sourceTree = "<group>"; };
+		F71200AE1DDE690800923CB1 /* ReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
+		F71200B01DDE699000923CB1 /* NibLoadableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadableView.swift; sourceTree = "<group>"; };
+		F71200B21DDE6A0A00923CB1 /* UICollectionView+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +131,8 @@
 			isa = PBXGroup;
 			children = (
 				F71200A41DDE340200923CB1 /* HeaderView.swift */,
+				F71200AA1DDE63AA00923CB1 /* TacoCell.swift */,
+				F71200AB1DDE63AA00923CB1 /* TacoCell.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -145,6 +157,9 @@
 			isa = PBXGroup;
 			children = (
 				F71200A21DDE334500923CB1 /* DropShadow.swift */,
+				F71200AE1DDE690800923CB1 /* ReusableView.swift */,
+				F71200B01DDE699000923CB1 /* NibLoadableView.swift */,
+				F71200B21DDE6A0A00923CB1 /* UICollectionView+Ext.swift */,
 			);
 			name = Protocols;
 			sourceTree = "<group>";
@@ -241,6 +256,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F71200AD1DDE63AA00923CB1 /* TacoCell.xib in Resources */,
 				F71200851DDE2FC800923CB1 /* LaunchScreen.storyboard in Resources */,
 				F71200821DDE2FC800923CB1 /* Assets.xcassets in Resources */,
 				F71200801DDE2FC800923CB1 /* Main.storyboard in Resources */,
@@ -261,8 +277,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F71200AC1DDE63AA00923CB1 /* TacoCell.swift in Sources */,
 				F712007B1DDE2FC800923CB1 /* AppDelegate.swift in Sources */,
 				F71200A31DDE334500923CB1 /* DropShadow.swift in Sources */,
+				F71200B11DDE699000923CB1 /* NibLoadableView.swift in Sources */,
+				F71200B31DDE6A0A00923CB1 /* UICollectionView+Ext.swift in Sources */,
+				F71200AF1DDE690800923CB1 /* ReusableView.swift in Sources */,
 				F71200A11DDE31A400923CB1 /* MainVC.swift in Sources */,
 				F71200A91DDE5FD100923CB1 /* DataService.swift in Sources */,
 				F71200A71DDE36F700923CB1 /* Taco.swift in Sources */,
