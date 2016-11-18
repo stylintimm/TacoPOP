@@ -23,6 +23,7 @@ class MainVC: UIViewController, DataServiceDelegate {
         ds.delegate = self
         
         ds.loadDeliciousTacoData()
+        ds.tacoArray.shuffle()
 
         headerView.addDropShadow()
         collectionView.delegate = self
@@ -50,15 +51,22 @@ extension MainVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollec
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "TacoCell", for: indexPath) as? TacoCell {
-            cell.configureCell(taco: ds.tacoArray[indexPath.row])
-            return cell
-        }
-        return UICollectionViewCell()
+//        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "TacoCell", for: indexPath) as? TacoCell {
+//            cell.configureCell(taco: ds.tacoArray[indexPath.row])
+//            return cell
+//        }
+//        return UICollectionViewCell()
+        
+        let cell = collectionView.dequeueReusableCell(forIndexPath: indexPath) as TacoCell
+        cell.configureCell(taco: ds.tacoArray[indexPath.row])
+        return cell
+        
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
+        if let cell = collectionView.cellForItem(at: indexPath) as? TacoCell{
+            cell.shake()
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

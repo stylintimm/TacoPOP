@@ -22,6 +22,8 @@
 		F71200AF1DDE690800923CB1 /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71200AE1DDE690800923CB1 /* ReusableView.swift */; };
 		F71200B11DDE699000923CB1 /* NibLoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71200B01DDE699000923CB1 /* NibLoadableView.swift */; };
 		F71200B31DDE6A0A00923CB1 /* UICollectionView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71200B21DDE6A0A00923CB1 /* UICollectionView+Ext.swift */; };
+		F71200B51DDE7A7100923CB1 /* MutableCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71200B41DDE7A7100923CB1 /* MutableCollection.swift */; };
+		F71200B71DDE7C0600923CB1 /* Shakeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71200B61DDE7C0600923CB1 /* Shakeable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,8 @@
 		F71200AE1DDE690800923CB1 /* ReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
 		F71200B01DDE699000923CB1 /* NibLoadableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadableView.swift; sourceTree = "<group>"; };
 		F71200B21DDE6A0A00923CB1 /* UICollectionView+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Ext.swift"; sourceTree = "<group>"; };
+		F71200B41DDE7A7100923CB1 /* MutableCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MutableCollection.swift; sourceTree = "<group>"; };
+		F71200B61DDE7C0600923CB1 /* Shakeable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shakeable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,7 +163,7 @@
 				F71200A21DDE334500923CB1 /* DropShadow.swift */,
 				F71200AE1DDE690800923CB1 /* ReusableView.swift */,
 				F71200B01DDE699000923CB1 /* NibLoadableView.swift */,
-				F71200B21DDE6A0A00923CB1 /* UICollectionView+Ext.swift */,
+				F71200B61DDE7C0600923CB1 /* Shakeable.swift */,
 			);
 			name = Protocols;
 			sourceTree = "<group>";
@@ -167,6 +171,8 @@
 		F712009F1DDE315D00923CB1 /* Extenstions */ = {
 			isa = PBXGroup;
 			children = (
+				F71200B41DDE7A7100923CB1 /* MutableCollection.swift */,
+				F71200B21DDE6A0A00923CB1 /* UICollectionView+Ext.swift */,
 			);
 			name = Extenstions;
 			sourceTree = "<group>";
@@ -278,6 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F71200AC1DDE63AA00923CB1 /* TacoCell.swift in Sources */,
+				F71200B51DDE7A7100923CB1 /* MutableCollection.swift in Sources */,
 				F712007B1DDE2FC800923CB1 /* AppDelegate.swift in Sources */,
 				F71200A31DDE334500923CB1 /* DropShadow.swift in Sources */,
 				F71200B11DDE699000923CB1 /* NibLoadableView.swift in Sources */,
@@ -286,6 +293,7 @@
 				F71200A11DDE31A400923CB1 /* MainVC.swift in Sources */,
 				F71200A91DDE5FD100923CB1 /* DataService.swift in Sources */,
 				F71200A71DDE36F700923CB1 /* Taco.swift in Sources */,
+				F71200B71DDE7C0600923CB1 /* Shakeable.swift in Sources */,
 				F71200A51DDE340200923CB1 /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
